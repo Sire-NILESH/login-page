@@ -1,0 +1,99 @@
+<html lang="en" class="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landbook | Login</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer type="text/javascript" src="index.js"></script>
+  </head>
+  <body class="font-nunito dark:bg-slate-800 dark:text-white">
+
+    <!-- darkMode button -->
+    <div class="darkMode-btn absolute z-10 top-7 right-7 cursor-pointer" id="darkMode-btn"></div>
+
+
+    <div
+      class="flex flex-col md:flex-row mx-auto max-w-[80%] md:w-[60%] md:space-x-32 "
+    >
+      <!-- text-box -->
+      <div class="mb-6 md:mt-28">
+        <!-- logo box -->
+        <div class="flex items-center space-x-2 mt-16 md:mt-0 mb-10" id="logo">
+          <div class="rounded-full border-8 border-green-600 w-10 h-10"></div>
+          <h3 class="font-extrabold text-2xl tracking-tighter">Land-book</h3>
+        </div>
+        <div class="">
+          <h2 class="font-semibold text-3xl mb-1">Sign in to Land-book</h2>
+          <p class="font-normal text-sm text-gray-600 dark:text-slate-400">
+            We collect awesome websites to help creatives find inspiration &
+            motivation to do rad stuff.
+          </p>
+        </div>
+      </div>
+
+
+      <div>
+      <!-- login-box -->
+      <form class="p-8 max-w-xl md:mt-28 shadow-md border-2 border-gray-100 dark:border-slate-700 rounded-2xl mb-6" autocomplete="on">
+        <!-- twitter signin -->
+        <div
+          class="flex items-center justify-center rounded-md space-x-2 bg-gray-200 dark:bg-slate-600 p-2 mb-6 cursor-pointer hover:bg-gray-300 hover:dark:bg-slate-700 transition-all duration-300"
+        >
+          <div class="w-5 h-5 bg-blue-500 rounded-full"></div>
+          <a href="#" class="text-normal font-sm text-gray-800 dark:text-white"
+            >Sign in with Twitter</a
+          >
+        </div>
+
+        <div class="flex items-center justify-center space-x-6 mb-6">
+          <div class="w-52 border-t-2 dark:border-slate-700"></div>
+          <p class="text-center">Or</p>
+          <div class="w-52 border-t-2 dark:border-slate-700"></div>
+        </div>
+
+        <!-- inputs -->
+        <div class="mb-6">
+          <label for="userEmail" class="block mb-1 font-semibold text-[#333] dark:text-slate-300"
+            >Email address</label
+          >
+          <input
+            type="email"
+            class="block bg-gray-200 dark:bg-slate-600 w-full px-4 py-2 rounded-md myinput"
+            placeholder="yourname@example.com"
+            id="userEmail"
+            autocomplete="current-email"
+          />
+        </div>
+        <div>
+          <label for="userPassword" class="block mb-1 font-semibold text-[#333] dark:text-slate-300"
+            >Password</label
+          >
+          <input
+            type="password"
+            class="block bg-gray-200 dark:bg-slate-600 w-full px-4 py-2 rounded-md mb-2 myinput"
+            placeholder="******"
+            autocomplete="current-password"
+          />
+          <a
+            href="#"
+            class=
+            ><p class="tracking-normal text-sm text-[#7a9679] underline mb-4">Forgot password?</p></a
+          >
+        </div>
+
+        <div class="flex items-center space-x-2 mb-6">
+          <input type="checkbox" id="rememberMe" class="w-5 h-5 hover:cursor-pointer">
+          <label for="rememberMe" class="dark:text-slate-300">Remember me</label>
+        </div>
+
+        <button type="submit" class="w-full">
+          <a href="#" class="block w-full rounded-md p-2 text-white text-center font-semibold bg-green-600 hover:bg-green-700 transition-all duration-300">Sign in</a>
+        </button>
+      </form>
+
+      <p class="text-sm dark:text-slate-300">Not a member?  <a href="#" class="text-sm text-green-600 hover:underline">Sign up now</a></p>
+  </div>
+    </div>
+    
+  </body>
+</html>
