@@ -15,3 +15,15 @@
   outline: 1px solid rgba(82, 192, 124, 0.5);
   box-shadow: 0 0 0 0.2rem rgba(98, 168, 17, 0.507);
 }
+
+.toggleOff span {
+  @apply translate-x-0;
+}
+
+.toggleOn {
+  @apply bg-cyan-500;
+}
+
+.toggleOn span {
+  @apply translate-x-5;
+}
