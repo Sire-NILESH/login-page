@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>TO DO's</title>
+  </head>
+  <body
+    class="font-poppins bg-[#f2f2ff] text-slate-700 h-screen w-screen flex justify-center items-center"
+  >
+    <div
+      class="w-[768px] lg:w-[1600px] shadow-outset rounded-3xl py-8 h-[90%] space-y-8 flex flex-col"
+    >
+      <header class="grid grid-cols-5 border-b-2 p-6 mx-8 items-center">
+        <div class="flex items-center justify-start space-x-2 cursor-pointer">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6 text-slate-300 hover:text-slate-400 transition-colors duration-200 ease-out"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+            />
+          </svg>
+          <input
+            type="text"
+            placeholder="Search"
+            class="w-[100%] placeholder:uppercase text-sm placeholder:tracking-[4px] font-semibold placeholder:text-slate-300 text-slate-600 p-2 bg-[#f2f2ff] focus:outline-none focus:border-b-2 focus:border-slate-400"
+          />
+        </div>
+        <!-- center -->
+        <div class="flex col-span-3 justify-self-center items-center space-x-1">
+          <p
+            class="uppercase font-semibold text-sm text-slate-500 tracking-widest mr-4 lg:mr-8"
+          >
+            Design Team
+          </p>
+          <!-- member images -->
+          <div class="flex gap-1">
+            <img
+              src="/customers/customer-1.jpg"
+              class="border-2 rounded-full bg-slate-300 w-10 h-10"
+              alt="user"
+            />
+            <img
+              src="/customers/customer-2.jpg"
+              class="border-2 rounded-full bg-slate-300 w-10 h-10"
+              alt="user"
+            />
+            <img
+              src="/customers/customer-3.jpg"
+              class="border-2 rounded-full bg-slate-300 w-10 h-10"
+              alt="user"
+            />
+  
+            <a
+              href="#"
+              class="text-slate-500 w-8 h-8 shadow-btn rounded-full flex items-center justify-center"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <!-- last -->
+        <div class="flex items-center justify-end space-x-4 lg:space-x-8">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6 text-slate-300 hover:text-slate-400 transition-colors duration-200 ease-out cursor-pointer"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
+            />
+          </svg>
+          <img
+            src="/customers/ben.jpg"
+            class="border-2 rounded-full bg-slate-300 w-10 h-10"
+            alt="user"
+          />
+        </div>
+      </header>
+
+      <main class="w-full h-full flex gap-12 lg:gap-14 pb-12 overflow-hidden">
+        <aside class="w-1/4 h-full overflow-auto">
+          <!-- 01 -->
+          <div class="space-y-4 mb-8">
+            <h3
+              class="col-span-1 text-normal lg:text-2xl font-semibold text-slate-300 ml-8"
+            >
+              Design team
+            </h3>
+            <ul class="space-y-2 lg:w-4/5">
+              <li
+                class="relative font-semibold text-slate-500 text-sm hover:bg-gray-200 px-8 py-2 rounded-r-full transition-colors duration-200 ease-out current-option"
+              >
+                <a href="#">Design tasks</a>
+              </li>
+              <li
+                class="relative font-semibold text-slate-500 text-sm px-8 py-2 hover:bg-gray-200 rounded-r-full transition-colors duration-200 ease-out"
+              >
+                <a href="#">Halcyon Website</a>
+              </li>
+              <li
+                class="relative font-semibold text-slate-500 text-sm px-8 py-2 hover:bg-gray-200 rounded-r-full transition-colors duration-200 ease-out"
+              >
+                <a href="#">Onboarding Materials</a>
+              </li>
+              <li
+                class="relative font-semibold text-slate-500 text-sm px-8 py-2 hover:bg-gray-200 rounded-r-full transition-colors duration-200 ease-out"
+              >
+                <a href="#">Marketing</a>
+              </li>
+            </ul>
+          </div>
+          <!-- 02 -->
+          <div class="space-y-4 mb-8">
+            <h3
+              class="col-span-1 text-normal lg:text-2xl font-semibold text-slate-300 ml-8"
+            >
+              Personal
+            </h3>
+            <ul class="space-y-2 lg:w-4/5">
+              <li
+                class="relative font-semibold text-slate-500 text-sm px-8 py-2 hover:bg-gray-200 rounded-r-full transition-colors duration-200 ease-out"
+              >
+                <a href="#">Home renovations</a>
+              </li>
+              <li
+                class="relative font-semibold text-slate-500 text-sm px-8 py-2 hover:bg-gray-200 rounded-r-full transition-colors duration-200 ease-out"
+              >
+                <a href="#">Untitled</a>
+              </li>
+            </ul>
+          </div>
+        </aside>
+        <section class="w-full mr-8">
+          <header class="flex justify-between mb-4 w-full">
+            <h3
+              class="col-span-3 text-normal lg:text-2xl font-semibold text-slate-600"
+            >
+              Design tasks
+            </h3>
+            <!-- add tasks button grp -->
+            <div class="flex space-x-6 lg:mr-32">
+              <a
+                href="#"
+                class="text-slate-500 w-10 h-10 lg:w-12 lg:h-12 shadow-btn rounded-full flex items-center justify-center"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M4 6h16M4 12h16m-7 6h7"
+                  />
+                </svg>
+              </a>
+
+              <a
+                href="#"
+                class="!bg-blue-700 hover:!bg-blue-600 uppercase font-light text-sm tracking-widest lg:tracking-[5px] text-slate-100 w-36 h-10 lg:w-48 lg:h-12 shadow-btn-blue rounded-full flex items-center justify-center transition-colors duration-200 ease-out"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6v6m0 0v6m0-6h6m-6 0H6"
+                  />
+                </svg>
+                &nbsp; Add task
+              </a>
+            </div>
+          </header>
+
+          <!-- CARDS GO HERE -->
+          <div
+            class="w-full h-full grid grid-cols-2 lg:grid-cols-4 gap-14 items-start overflow-auto pr-4 pb-80"
+          >
+            <!-- COL-1 -->
+            <div class="flex flex-col gap-6">
+              <p
+                class="uppercase tracking-[4px] font-bold text-normal text-slate-500"
+              >
+                Backlog
+              </p>
+              <!-- card container col 1 -->
+              <div class="flex flex-col gap-6 ml-3">
+                <!-- card -->
+                <div class="card-todo w-full p-4 space-y-2">
+                  <header class="flex justify-between items-center">
+                    <div
+                      class="w-20 h-2 bg-cyan-500 px-6 rounded-full hover:w-24 transition-all duration-300 ease-out"
+                    ></div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-6 w-6 text-slate-400 hover:text-slate-600 cursor-pointer transition-text duration-300 ease-out"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"
+                      />
+                    </svg>
+                  </header>
+                  <div class="flex flex-col gap-4">
+                    <p class="text-sm text-slate-500 font-semibold">
+                      Create case study for Edplace
+                    </p>
+                    <span
+                      class="shadow-inset p-1 text-slate-400 text-xs w-24 text-center rounded-full"
+                    >
+                      Feb 2, 2022
+                    </span>
+                    <div class="flex justify-between items-center">
+                      <p
+                        class="text-xs text-slate-400 tracking-wide cursor-pointer"
+                      >
+                        4 comments
+                      </p>
+                      <!-- member's images -->
+                      <div class="flex gap-1">
+                        <img
+                          src="/customers/customer-5.jpg"
+                          class="w-6 h-6 rounded-full"
+                          alt="image of user"
+                        />
+                        <img
+                          src="/customers/customer-2.jpg"
+                          class="w-6 h-6 rounded-full"
+                          alt="image of user"
+                        />
+                        <span class="text-slate-400 tracking-widest">...</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /card -->
+                <!-- card -->
+                <div class="card-todo w-full p-4 space-y-2">
+                  <header class="flex justify-between items-center">
+                    <div
+                      class="w-20 h-2 bg-yellow-500 px-6 rounded-full hover:w-24 transition-all duration-300 ease-out"
+                    ></div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-6 w-6 text-slate-400 hover:text-slate-600 cursor-pointer transition-text duration-300 ease-out"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"
+                      />
+                    </svg>
+                  </header>
+                  <div class="flex flex-col gap-4">
+                    <p class="text-sm text-slate-500 font-semibold">
+                      Create case study for Edplace
+                    </p>
+                  </div>
+                </div>
+                <!-- /card -->
+                <!-- add new cards -->
+                <div class="flex gap-3 items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6 text-slate-500 cursor-pointer"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                  <span class="text-sm font-semibold text-slate-300"
+                    >Add new card</span
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- COL-2 -->
+            <div class="flex flex-col gap-6">
+              <p
+                class="uppercase tracking-[4px] font-bold text-normal text-slate-500"
+              >
+                Todo
+              </p>
+              <!-- card container col 2 -->
+              <div class="flex flex-col gap-6 ml-3">
+                <!-- card -->
+                <div class="card-todo w-full p-4 space-y-2">
+                  <header class="flex justify-between items-center">
+                    <div
+                      class="w-20 h-2 bg-yellow-500 px-6 rounded-full hover:w-24 transition-all duration-300 ease-out"
+                    ></div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-6 w-6 text-slate-400 hover:text-slate-600 cursor-pointer transition-text duration-300 ease-out"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"
+                      />
+                    </svg>
+                  </header>
+                  <div class="flex flex-col gap-4">
+                    <p class="text-sm text-slate-500 font-semibold">
+                      Update design team video with new company logo
+                    </p>
+                  </div>
+                </div>
+                <!-- /card -->
+                <!-- card -->
+                <div class="card-todo w-full p-4 space-y-2">
+                  <header class="flex justify-between items-center">
+                    <div
+                      class="w-20 h-2 bg-red-500 px-6 rounded-full hover:w-24 transition-all duration-300 ease-out"
+                    ></div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-6 w-6 text-slate-400 hover:text-slate-600 cursor-pointer transition-text duration-300 ease-out"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"
+                      />
+                    </svg>
+                  </header>
+                  <div class="flex flex-col gap-4">
+                    <p class="text-sm text-slate-500 font-semibold">
+                      Prepare task template
+                    </p>
+
+                    <div class="flex justify-between items-center">
+                      <p
+                        class="text-xs text-slate-400 tracking-wide cursor-pointer"
+                      >
+                        2 comments
+                      </p>
+                      <!-- member's images -->
+                      <div class="flex gap-1">
+                        <img
+                          src="/customers/customer-6.jpg"
+                          class="w-6 h-6 rounded-full"
+                          alt="image of user"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /card -->
+                <!-- card -->
+                <div class="card-todo w-full p-4 space-y-2">
+                  <header class="flex justify-between items-center">
+                    <div
+                      class="w-20 h-2 bg-cyan-500 px-6 rounded-full hover:w-24 transition-all duration-300 ease-out"
+                    ></div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-6 w-6 text-slate-400 hover:text-slate-600 cursor-pointer transition-text duration-300 ease-out"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"
+                      />
+                    </svg>
+                  </header>
+                  <div class="flex flex-col gap-4">
+                    <p class="text-sm text-slate-500 font-semibold">
+                      Gather resources for Pitch deck
+                    </p>
+                    <span
+                      class="shadow-inset p-1 text-slate-400 text-xs w-24 text-center rounded-full"
+                    >
+                      Feb 2, 2022
+                    </span>
+                    <div class="flex justify-between items-center">
+                      <p
+                        class="text-xs text-slate-400 tracking-wide cursor-pointer"
+                      >
+                        3 comments
+                      </p>
+                      <!-- member's images -->
+                      <div class="flex gap-1">
+                        <img
+                          src="/customers/customer-4.jpg"
+                          class="w-6 h-6 rounded-full"
+                          alt="image of user"
+                        />
+                        <img
+                          src="/customers/customer-1.jpg"
+                          class="w-6 h-6 rounded-full"
+                          alt="image of user"
+                        />
+                        <span class="text-slate-400 tracking-widest">...</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /card -->
+                <!-- card -->
+                <div class="card-todo w-full p-4 space-y-2">
+                  <header class="flex justify-between items-center">
+                    <div
+                      class="w-20 h-2 bg-yellow-500 px-6 rounded-full hover:w-24 transition-all duration-300 ease-out"
+                    ></div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-6 w-6 text-slate-400 hover:text-slate-600 cursor-pointer transition-text duration-300 ease-out"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"
+                      />
+                    </svg>
+                  </header>
+                  <div class="flex flex-col gap-4">
+                    <p class="text-sm text-slate-500 font-semibold">
+                      Send over website assets to developers
+                    </p>
+                  </div>
+                </div>
+                <!-- /card -->
+                <!-- add new cards -->
+                <div class="flex gap-3 items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6 text-slate-500 cursor-pointer"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                  <span class="text-sm font-semibold text-slate-300"
+                    >Add new card</span
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- COL-3 -->
+            <div class="flex flex-col gap-6">
+              <p
+                class="uppercase tracking-[4px] font-bold text-normal text-slate-500"
+              >
+                in progress
+              </p>
+              <!-- card container col 3 -->
+              <div class="flex flex-col gap-6 ml-3">
+                <!-- card -->
+                <div class="card-todo w-full p-4 space-y-2">
+                  <header class="flex justify-between items-center">
+                    <div
+                      class="w-20 h-2 bg-red-500 px-6 rounded-full hover:w-24 transition-all duration-300 ease-out"
+                    ></div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-6 w-6 text-slate-400 hover:text-slate-600 cursor-pointer transition-text duration-300 ease-out"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"
+                      />
+                    </svg>
+                  </header>
+                  <div class="flex flex-col gap-4">
+                    <p class="text-sm text-slate-500 font-semibold">
+                      Mentoring 2022
+                    </p>
+
+                    <div class="flex justify-between items-center">
+                      <p
+                        class="text-xs text-slate-400 tracking-wide cursor-pointer"
+                      >
+                        2 comments
+                      </p>
+                      <!-- member's images -->
+                      <div class="flex gap-1">
+                        <img
+                          src="/customers/dave.jpg"
+                          class="w-6 h-6 rounded-full"
+                          alt="image of user"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /card -->
+                <!-- add new cards -->
+              <div class="flex gap-3 items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6 text-slate-500 cursor-pointer"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+                <span class="text-sm font-semibold text-slate-300"
+                  >Add new card</span
+                >
+              </div>
+              </div>
+            </div>
+            <!-- COL-4 -->
+            <div class="flex flex-col gap-6">
+              <p
+                class="uppercase tracking-[4px] font-bold text-normal text-slate-500"
+              >
+                done
+              </p>
+              <!-- card container col 1 -->
+              <div class="flex flex-col gap-6 ml-3">
+                <!-- card -->
+                <div class="card-todo w-full p-4 space-y-2 ">
+                  <header class="flex justify-between items-center">
+                    <div
+                      class="w-20 h-2 bg-cyan-500 px-6 rounded-full hover:w-24 transition-all duration-300 ease-out"
+                    ></div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-6 w-6 text-slate-400 hover:text-slate-600 cursor-pointer transition-text duration-300 ease-out"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"
+                      />
+                    </svg>
+                  </header>
+                  <div class="flex flex-col gap-4">
+                    <p class="text-sm text-slate-500 font-semibold">
+                      Case study for Roadz
+                    </p>
+                    <span
+                      class="shadow-inset p-1 text-slate-400 text-xs w-24 text-center rounded-full"
+                    >
+                      Mar 12, 2022
+                    </span>
+                    <div class="flex justify-between items-center">
+                      <p
+                        class="text-xs text-slate-400 tracking-wide cursor-pointer"
+                      >
+                        4 comments
+                      </p>
+                      <!-- member's images -->
+                      <div class="flex gap-1">
+                        <img
+                          src="/customers/customer-4.jpg"
+                          class="w-6 h-6 rounded-full"
+                          alt="image of user"
+                        />
+                        <img
+                          src="/customers/customer-1.jpg"
+                          class="w-6 h-6 rounded-full"
+                          alt="image of user"
+                        />
+                        <span class="text-slate-400 tracking-widest">...</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /card -->
+                <!-- card -->
+                <div class="card-todo w-full p-4 space-y-2">
+                  <header class="flex justify-between items-center">
+                    <div
+                      class="w-20 h-2 bg-yellow-500 px-6 rounded-full hover:w-24 transition-all duration-300 ease-out"
+                    ></div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-6 w-6 text-slate-400 hover:text-slate-600 cursor-pointer transition-text duration-300 ease-out"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"
+                      />
+                    </svg>
+                  </header>
+                  <div class="flex flex-col gap-4">
+                    <p class="text-sm text-slate-500 font-semibold">
+                      Design system verification
+                    </p>
+                  </div>
+                </div>
+                <!-- /card -->
+                <!-- add new cards -->
+                <div class="flex gap-3 items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6 text-slate-500 cursor-pointer"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                  <span class="text-sm font-semibold text-slate-300"
+                    >Add new card</span
+                  >
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+
+    <!-- here -->
+    
+
+  </body>
+</html>

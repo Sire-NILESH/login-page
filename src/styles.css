@@ -3,7 +3,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,700;1,800;1,900&display=swap");
 
 @tailwind base;
+
 @tailwind components;
+
 @tailwind utilities;
 
 .myinput:focus {
@@ -27,3 +29,63 @@
 .toggleOn span {
   @apply translate-x-5;
 }
+
+/* ----------------to do--------------------- */
+.shadow-outset {
+  background: #f2f2ff;
+  box-shadow: 18px 37px 74px #c6c6d1, -37px -37px 74px #ffffff;
+}
+
+.shadow-btn {
+  background: #f2f2ff;
+  box-shadow: 5px 5px 11px #d0d0db, -5px -5px 11px #ffffff;
+}
+.shadow-btn-blue {
+  background: #f2f2ff;
+  box-shadow: 5px 5px 11px #8383f3;
+}
+
+.shadow-inset {
+  background: #f2f2ff;
+  box-shadow: inset 3px 3px 7px #e3e3f0, inset -3px -3px 7px #ffffff;
+  border-top: 2px;
+  border-left: 2px;
+  border-color: #fdfbfb;
+}
+
+.current-option {
+  @apply bg-blue-700 text-white;
+}
+.current-option:hover {
+  @apply !bg-blue-700 !text-white;
+}
+
+.card-todo {
+  border-radius: 18px;
+  background: #f2f2ff;
+  box-shadow: 10px 10px 20px #dadae4, -20px -20px 60px #f2f2ff;
+}
+
+/* scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f2f2ff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(83, 215, 255);
+  border-radius: 100px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(27, 200, 253);
+}
+
+/* ------------------------------------- */
